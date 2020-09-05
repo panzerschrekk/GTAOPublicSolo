@@ -20,4 +20,4 @@ AHK Script to quickly create a GTA Online Public Solo Session
     6b. Ctrl+F5 do block GTA from the internet, wait 10sec and then press Ctrl+F6 to allow GTA from accessing the internet
     
 ## What the script does:
-Adds a Windows firewall rule to block the exe from accessing the internet
+Adds a temporary Windows firewall rule to block the GTA5.exe from accessing the internet
