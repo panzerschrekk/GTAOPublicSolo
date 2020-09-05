@@ -31,3 +31,6 @@ Adds a temporary Windows firewall rule to block the GTA5.exe from accessing the 
 ### Not Tested, but probably works
 - Windows 8.1, 8.0 and 7
 - Steam Version of GTA5
+
+### Doesn't work
+- Windows XP
