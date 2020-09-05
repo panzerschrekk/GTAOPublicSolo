@@ -4,7 +4,7 @@ AHK Script to quickly create a GTA Online Public Solo Session
 ## What you'll need:
 1. Windows Firewall enabled
 2. AutoHotKey from https://www.autohotkey.com/ (The version doesn't matter)
-3. The path to the folder in which your GTA5.exe is located
+3. The path in which your GTA5.exe is located
 4. Administrator rights
 
 ## How it works:
