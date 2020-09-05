@@ -1,4 +1,5 @@
 ; Define here the path to your GTA5.exe
+; Default paths are: "C:\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V" or "C:\Program Files\Rockstar Games\Grand Theft Auto V"
 gta5_path := "C:\Program Files\Rockstar Games\Grand Theft Auto V"
 
 ; Key-shortcut (Ctrl+F5) to block GTA from accessing the internet
