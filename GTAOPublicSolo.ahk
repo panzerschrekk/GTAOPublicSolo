@@ -12,8 +12,8 @@ run, *runas %comspec% /c netsh advfirewall firewall add rule name="GTAVBlockButt
 run, *runas %comspec% /c netsh advfirewall firewall add rule name="GTAVBlockButton" dir=out action=block profile=any program="%gta5_path%\GTA5.exe",, hide, npPid
 ; Show the tooltip to inform user
 Tooltip GTA5 is now blocked, 10, 20
-; Wait 5 sec
-DllCall("Sleep",UInt,5000)
+; Wait 2 sec
+DllCall("Sleep",UInt,2000)
 Tooltip
 return
 
@@ -25,8 +25,8 @@ run, *runas %comspec% /c netsh advfirewall firewall set rule name="Grand Theft A
 run, *runas %comspec% /c netsh advfirewall firewall delete rule name="GTAVBlockButton",, hide, npPid
 ; Show the tooltip to inform user
 Tooltip GTA5 is now allowed, 10, 20
-; Wait 5 sec
-DllCall("Sleep",UInt,5000)
+; Wait 2 sec
+DllCall("Sleep",UInt,2000)
 Tooltip
 return
 
