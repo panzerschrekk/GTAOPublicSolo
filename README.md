@@ -10,7 +10,7 @@ AHK Script to quickly create a GTA Online Public Solo Session
 ## How it works:
 1. Download the .ahk file from the repo
 2. Edit the .ahk file
-3. Insert your path in the first line, without the trailing backslash (e.g. "C:\GTAV" instead of "C:\GTAV\")
+3. Insert your path in the first line, without the trailing backslash (e.g. "C:\GTAV" instead of "C:\GTAV\\")
 4. Right click the file -> Run as administrator
 5. Start GTA Online
 6. As soon as you're in a public session press either:
