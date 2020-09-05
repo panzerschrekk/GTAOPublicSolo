@@ -1,5 +1,5 @@
 ; Define here the path to your GTA5.exe
-gta5_path := "D:\Games\Epic Games\GTAV"
+gta5_path := "C:\Program Files\Rockstar Games\Grand Theft Auto V"
 
 ; Key-shortcut (Ctrl+F5) to block GTA from accessing the internet
 ^f5::
