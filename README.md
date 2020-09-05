@@ -13,7 +13,7 @@ AHK Script to quickly create a GTA Online Public Solo Session
 3. Insert your path in the first line, without the trailing backslash (e.g. "C:\GTAV" instead of "C:\GTAV\\")
 4. Right click the file -> Run as administrator
 5. Start GTA Online
-6. As soon as you're in a public session press either:
+6. As soon as you're in a public session (you see your character) press either:
 
     6a. Ctrl+F12 to automatically block, wait 10sec and then allow GTA from accessing the internet
     
