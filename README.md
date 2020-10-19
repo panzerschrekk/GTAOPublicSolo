@@ -1,5 +1,5 @@
 # GTAOPublicSolo
-AHK Script to quickly create a GTA Online Public Solo Session and turn off/on a network adapter (and automatic lucky wheel spin feature)
+AHK Script to quickly create a GTA Online Public Solo Session, turn off/on a network adapter and spin the lucky wheel
 
 ## What you'll need:
 1. Windows Firewall enabled (https://support.microsoft.com/en-us/help/4028544/windows-10-turn-microsoft-defender-firewall-on-or-off)
