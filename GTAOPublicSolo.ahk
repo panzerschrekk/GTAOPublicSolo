@@ -17,7 +17,7 @@ SendMode Input
 
 ; Define here the path to your GTA5.exe
 ; Default paths are: "C:\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V" or "C:\Program Files\Rockstar Games\Grand Theft Auto V"
-gta5_path := "E:\GTAV"
+gta5_path := "C:\Program Files\Rockstar Games\Grand Theft Auto V"
 
 ; Define the network adapter name
 ; To find out the name use "netsh interface ipv4 show config" in cmd
