@@ -9,7 +9,7 @@ AHK Script to quickly create a GTA Online Public Solo Session, turn off/on a net
 5. Network adapter name to be disabled (use "netsh interface ipv4 show config" to find out which one)
 
 ## How it works:
-1. Download the .ahk file from the repo
+1. Download the .ahk file from the repo (https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/panzerschrekk/GTAOPublicSolo/blob/master/GTAOPublicSolo.ahk)
 2. Edit the .ahk file
 3. Insert your path on line 3, without the trailing backslash (e.g. "C:\GTAV" instead of "C:\GTAV\\")
 4. Insert your network adapter name on line 8
