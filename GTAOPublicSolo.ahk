@@ -17,14 +17,16 @@ SendMode Input
 
 ; Define here the path to your GTA5.exe
 ; Default paths are: "C:\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V" or "C:\Program Files\Rockstar Games\Grand Theft Auto V"
-gta5_path := "C:\Program Files\Rockstar Games\Grand Theft Auto V"
+IniRead, gta5_path, GTAOPublicSolo.ini, GTAOPublicSoloConfig, gta5_path , "C:\Program Files\Rockstar Games\Grand Theft Auto V"
 
 ; Define the network adapter name
 ; To find out the name use "netsh interface ipv4 show config" in cmd
-network_adapter_name := "Ethernet"
+;network_adapter_name := "Ethernet"
+IniRead, network_adapter_name, GTAOPublicSolo.ini, GTAOPublicSoloConfig, network_adapter_name , "Ethernet"
 
 ;Edit this value to change the spinning speed: higher value = slower spin
-delay := 4454
+;delay := 4454
+IniRead, delay, GTAOPublicSolo.ini, GTAOPublicSoloConfig, delay , "4454"
 
 ; Key-shortcut (Ctrl+F1) to spin the lucky wheel
 ; You'll need a fresh wheel (arrow is pointing to clothing and vehicle is two to the left of the arrow) -> https://i.imgur.com/AATKGrC.png
@@ -73,6 +75,20 @@ CoordMode, ToolTip, Screen
 	; Wait 2 sec
 	DllCall("Sleep",UInt,2000)
 	Tooltip
+	return
+
+; Key-shortcut (Ctrl+F11) to block GTA from accessing the internet for 25 sec
+; This is to come back online
+^f11::
+	; Set network adapter to off
+	run, *runas %comspec% /c netsh interface set interface name="%network_adapter_name%" admin=disabled,,hide 
+	; Show the tooltip to inform user
+	Tooltip Network adapter is now disabled for 25 sec..., 10, 20
+	; Wait 20 sec
+	DllCall("Sleep",UInt,25000)
+	Tooltip
+	; Set network adapter to on
+	run, *runas %comspec% /c netsh interface set interface name="%network_adapter_name%" admin=enabled,,hide
 	return
 
 ; Key-shortcut (Ctrl+F12) to automatically block, wait 10sec and then allow GTA from accessing the internet
