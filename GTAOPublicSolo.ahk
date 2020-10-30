@@ -17,15 +17,16 @@ SendMode Input
 
 ; Define here the path to your GTA5.exe
 ; Default paths are: "C:\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V" or "C:\Program Files\Rockstar Games\Grand Theft Auto V"
+; gta5_path := "C:\Program Files\Rockstar Games\Grand Theft Auto V"
 IniRead, gta5_path, GTAOPublicSolo.ini, GTAOPublicSoloConfig, gta5_path , "C:\Program Files\Rockstar Games\Grand Theft Auto V"
 
 ; Define the network adapter name
 ; To find out the name use "netsh interface ipv4 show config" in cmd
-;network_adapter_name := "Ethernet"
+; network_adapter_name := "Ethernet"
 IniRead, network_adapter_name, GTAOPublicSolo.ini, GTAOPublicSoloConfig, network_adapter_name , "Ethernet"
 
 ;Edit this value to change the spinning speed: higher value = slower spin
-;delay := 4454
+; delay := 4454
 IniRead, delay, GTAOPublicSolo.ini, GTAOPublicSoloConfig, delay , "4454"
 
 ; Key-shortcut (Ctrl+F1) to spin the lucky wheel
