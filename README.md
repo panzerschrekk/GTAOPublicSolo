@@ -20,6 +20,8 @@ AHK Script to quickly create a GTA Online Public Solo Session, turn off/on a net
     
     7b. Ctrl+F5 to disable the network adapter and Ctrl+F6 to enable the network adapter (e.g. you landed on the wrong spot on the lucky wheel)
     
+    7c. Ctrl+F11 to disable the network adapter, wait 25sec and then enable the network adapter (e.g. you landed on the wrong spot on the lucky wheel)
+    
     7c. Ctrl+F1 to spin the lucky wheel (only while you see exactly this screen: https://i.imgur.com/AATKGrC.png) , you'll probably have to change the "delay" value in the GTAOPublicSolo.ini file to work for your pc
     
 ## What the script does:
