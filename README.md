@@ -13,7 +13,7 @@ AHK Script to quickly create a GTA Online Public Solo Session, turn off/on a net
 3. Extract to .zip file anywhere
 2. Insert your path in the GTAOPublicSolo.ini file, without the trailing backslash (e.g. "C:\GTAV" instead of "C:\GTAV\\")
 3. Insert your network adapter name in the GTAOPublicSolo.ini file
-4. Right click the file -> Run as administrator
+4. Right click the .exe file -> Run as administrator
 5. Start GTA Online
 6. As soon as you're in a public session (you see your character) press either:
 
