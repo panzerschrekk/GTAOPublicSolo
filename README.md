@@ -27,8 +27,11 @@ AHK Script to quickly create a GTA Online Public Solo Session, turn off/on a net
     
 ## What the script does:
 Adds a temporary Windows firewall rule to block GTA5.exe from accessing the internet
+
 Turns off the network adapter completely
+
 Spins the lucky wheel on a precisely defined value
+
 
 ## Compability
 ### Tested
