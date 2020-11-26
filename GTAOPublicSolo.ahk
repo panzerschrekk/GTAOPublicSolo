@@ -18,12 +18,10 @@ SetWorkingDir %A_ScriptDir%
 
 ; Define here the path to your GTA5.exe
 ; Default paths are: "C:\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V" or "C:\Program Files\Rockstar Games\Grand Theft Auto V"
-; gta5_path := "C:\Program Files\Rockstar Games\Grand Theft Auto V"
 IniRead, gta5_path, GTAOPublicSolo.ini, GTAOPublicSoloConfig, gta5_path , C:\Program Files\Rockstar Games\Grand Theft Auto V
 
 ; Define the network adapter name
 ; To find out the name use "netsh interface ipv4 show config" in cmd
-; network_adapter_name := "Ethernet"
 IniRead, network_adapter_name, GTAOPublicSolo.ini, GTAOPublicSoloConfig, network_adapter_name , "Ethernet"
 
 ; Key-shortcut (Ctrl+F1) to spin the lucky wheel
@@ -41,10 +39,10 @@ CoordMode, ToolTip, Screen
         PixelGetColor, color, 106, 38, RGB
         If (color = 0xE5E5E5)
         {
-            Tooltip Waiting %delay% ms..., 0, 0
+            Tooltip [F1] Waiting %delay% ms..., 0, 0
             DllCall("Sleep",UInt,delay)
             SendInput {s down}
-            DllCall("Sleep",UInt,500)
+            DllCall("Sleep",UInt,25)
             SendInput {s up}
             Tooltip
             Break
@@ -59,7 +57,7 @@ CoordMode, ToolTip, Screen
 	; Set network adapter to off
 	run, *runas %comspec% /c netsh interface set interface name="%network_adapter_name%" admin=disabled,,hide 
 	; Show the tooltip to inform user
-	Tooltip Network adapter (%network_adapter_name%) is now disabled for %timeout_F11% millisec..., 10, 20
+	Tooltip [F11] Network adapter (%network_adapter_name%) is now disabled for %timeout_F11% millisec..., 10, 20
 	; Wait 20 sec
 	DllCall("Sleep",UInt,timeout_F11)
 	Tooltip
@@ -80,7 +78,7 @@ CoordMode, ToolTip, Screen
 	run, *runas %comspec% /c netsh advfirewall firewall add rule name="GTAVBlockButton" dir=out action=block profile=any program="%gta5_path%\PlayGTAV.exe",, hide, npPid
 	run, *runas %comspec% /c netsh advfirewall firewall add rule name="GTAVBlockButton" dir=in action=block profile=any program="%gta5_path%\PlayGTAV.exe",, hide, npPid
 	; Show the tooltip to inform user
-	Tooltip Blocking GTA5 (%gta5_path%\GTA5.exe) for %timeout_F12% millisec..., 10, 20
+	Tooltip [F12] Blocking GTA5 (%gta5_path%\GTA5.exe) for %timeout_F12% millisec..., 10, 20
 	; Wait 10 sec
 	DllCall("Sleep",UInt,timeout_F12)
 	Tooltip
